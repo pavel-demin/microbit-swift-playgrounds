@@ -4,14 +4,13 @@
 //
 //#-end-hidden-code
 /*:#localized(key: "FirstProseBlock")
- Welcome to the Swift Playground for exploring the micro:bit.
- 
- Let's start by sending a short text message to the micro:bit to be displayed on the LED panel.
- 
- 1. steps:  Run the code below to see the text being displayed.
- 2. In the code, tap the `Hello World` box to change the text that will be displayed.
- 3. Re-run the code to see your own message.
- */
+ Bienvenue sur le Swift Playground pour découvrir le micro:bit.
+
+ Commençons par envoyer un court message texte au micro:bit pour l'afficher sur le panneau LED.
+
+ 1. Exécutez le code ci-dessous pour voir le texte affiché.
+ 2. Dans le code, appuyez sur la case `Bonjour le Monde` pour modifier le texte qui sera affiché.
+ 3. Réexécutez le code pour voir votre propre message.
 //#-hidden-code
 import PlaygroundSupport
 
@@ -20,5 +19,5 @@ import PlaygroundSupport
 //#-code-completion(identifier, show, displayText(_:))
 
 //#-end-hidden-code
-let textToDisplay = /*#-editable-code text to display*/"Hello World!"/*#-end-editable-code*/
+let textToDisplay = /*#-editable-code text to display*/"Bonjour le Monde!"/*#-end-editable-code*/
 showString(textToDisplay)

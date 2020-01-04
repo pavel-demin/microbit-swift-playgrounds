@@ -4,17 +4,17 @@
 //
 //#-end-hidden-code
 /*:#localized(key: "PageLEDNarrative")
- So far we've had fun with the built in images on the micro:bit, and scrolled some text.
- 
- Let's try creating our own shapes! To do this, we need to tell the micro:bit which LEDs will be on, and which will be off.
- 
- If you run the code below, you'll see it still shows the shape of a heart, but this time rather than using the named `heart` image, we use `X` and `.` characters to represent the LEDs which are either *On* or *Off*.
- 
- This is your chance to get creative - what can you draw on the micro:bit's screen? Change the code below to change which LEDs are on or off.
- 
- If you have some paper handy why not draw a 5 x 5 grid and see what other shapes you can make in such a small grid.
- 
- And here's a challenge: can you add some frames and make this into a small animation?
+ Jusqu'à présent, nous nous sommes amusés avec les images intégrées sur le micro:bit et avons fait défiler du texte.
+
+ Essayons de créer nos propres formes! Pour ce faire, nous devons indiquer au micro:bit quelles LEDs seront allumées et lesquelles seront éteintes.
+
+ Si vous exécutez le code ci-dessous, vous verrez qu'il montre toujours la forme d'un coeur, mais cette fois plutôt que d'utiliser l'image nommée `heart`, nous utilisons les caractères `X` et `.` pour représenter les LEDs qui sont soit *allumées* ou *éteintes*.
+
+ C'est votre chance de faire preuve de créativité - que pouvez-vous dessiner sur l'écran du micro:bit? Modifiez le code ci-dessous pour changer les LEDs allumées ou éteintes.
+
+ Si vous avez du papier à portée de main, pourquoi ne pas dessiner une grille 5 x 5 et voir quelles autres formes vous pouvez faire dans une si petite grille.
+
+ Et voici un défi: pouvez-vous ajouter des images et en faire une petite animation?
  */
 //#-hidden-code
 import PlaygroundSupport

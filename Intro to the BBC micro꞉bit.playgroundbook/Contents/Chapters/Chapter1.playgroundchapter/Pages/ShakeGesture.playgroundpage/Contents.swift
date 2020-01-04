@@ -4,40 +4,40 @@
 //
 //#-end-hidden-code
 /*:#localized(key: "Page5Narrative")
- One of the many cool features of the BBC micro:bit is the many ways that you can interact with it to make it do things.
+ L'une des nombreuses fonctionnalités intéressantes du BBC micro:bit est les nombreuses façons dont vous pouvez interagir avec lui pour lui faire faire des choses.
+
+ Nous avons déjà vu comment le fait d'appuyer sur des boutons peut faire fonctionner le micro:bit, mais il existe également d'autres moyens.
+
+ Tout comme les smartphones et les tablettes, le micro:bit a un *accéléromètre* intégré qui détermine le mouvement d'inclinaison et l'orientation de l'appareil. Cela signifie qu'il peut dire comment il est orienté dans l'espace.
+
+ Ainsi, l'accéléromètre peut être utilisé pour faire le micro:bit détecter lorsqu'il est déplacé, ou dans ce cas, secoué.
  
- We have already seen how pressing buttons can make the micro:bit work, but there are other ways too.
- 
- Just like smartphones and tablet devices, the micro:bit has a built in ‘accelerometer’ which determines the tilting motion and orientation of the device. This means it can tell which way up it is in space.
- 
- So the accelerometer can be used to get the micro:bit to detect when it is moved, or in this case, shaken.
- 
- To do this let us revisit the ‘Rock, Paper, Scissors’ game you developed in the previous lesson. In that program you had to press a button to get the code to run, but it would be much more fun (and realistic) if you could get the micro:bit to react each time you *shake* it.
- 
- 1. Look at the slightly modified version of the previous ‘Rock, Paper, Scissors’ program below.
- 
- 2. Click to select the text for the `onButtonPressed` function. Change this function to `onGesture`
- 
- 3. Tap in the box where you see `gesture` and select **shake** from the completion bar on the keyboard, or type in `shake` if you wish.
- 
- 4. Complete the remain boxes in a similar way to the previous Rock, Paper, Scissors activity.
- 
- 5. Run your code.
- 
- 6. Shake either your micro:bit (or the iPad if you are not using a micro:bit) and notice how it reacts.
- 
- 7. Repeat step 6 several times and notice that the shape displayed on your micro:bit should change randomly between the rock, paper and scissors shape.
- 
- There are many ways in which the accelerometer can be used on a micro:bit and in the next exercise we will see a different application for this useful feature.
+ Pour ce faire, revenons au jeu Pierre, Papier, Ciseaux que vous avez développé dans la leçon précédente. Dans ce programme, vous deviez appuyer sur un bouton pour exécuter le code, mais ce serait beaucoup plus amusant (et réaliste) si vous pouviez faire réagir le micro:bit chaque fois que vous le *secouez*.
+
+ 1. Regardez la version légèrement modifiée du programme Pierre, Papier, Ciseaux précédent ci-dessous.
+
+ 2. Cliquez pour sélectionner le texte de la fonction `onButtonPressed`. Changez cette fonction en `onGesture`.
+
+ 3. Tapez dans la case où vous voyez `geste` et sélectionnez **shake** dans la barre de complétion du clavier, ou tapez `shake` si vous le souhaitez.
+
+ 4. Remplissez les cases restantes d'une manière similaire à l'activité Pierre, Papier, Ciseaux précédente.
+
+ 5. Exécutez votre code.
+
+ 6. Secouez votre micro:bit (ou l'iPad si vous n'utilisez pas un micro:bit) et notez comment il réagit.
+
+ 7. Répétez l'étape 6 plusieurs fois et notez que la forme affichée sur votre micro:bit devrait changer de façon aléatoire entre la forme de la pierre, du papier et des ciseaux.
+
+ Il existe de nombreuses façons d'utiliser l'accéléromètre sur un micro:bit et dans le prochain exercice, nous verrons une application différente pour cette fonctionnalité utile.
  */
 //#-hidden-code
 import PlaygroundSupport
 import Foundation
- 
+
  func random(in range: ClosedRange<Int>) -> Int {
  return range.lowerBound + Int(arc4random_uniform(UInt32(range.count)))
  }
- 
+
  let rock = createImage("""
  .###.
  ####.
@@ -45,7 +45,7 @@ import Foundation
  .###.
  ####.
  """)
- 
+
  let paper = createImage("""
  ####.
  #####
@@ -53,7 +53,7 @@ import Foundation
  #####
  #####
  """)
- 
+
  let scissors = iconImage(.scissors)
 
 let fist = createImage("""
@@ -77,16 +77,16 @@ func animateFist() {
 
 //#-code-completion(everything, hide)
 //#-code-completion(currentmodule, show)
+//#-code-completion(identifier, show, onGesture)
 //#-code-completion(identifier, show, shake)
 //#-code-completion(identifier, show, rock, paper, scissors)
-//#-code-completion(identifier, show, onGesture)
-//#-code-completion(identifier, hide, randomNumber, random(in:))
+//#-code-completion(identifier, hide, animateFist(), fist, randomNumber, random(in:))
 
 //#-end-hidden-code
 clearScreen()
-/*#-editable-code*/onButtonPressed/*#-end-editable-code*/(./*#-editable-code*/<#T##gesture##BTMicrobit.Event.Gesture#>/*#-end-editable-code*/, handler: {
+/*#-editable-code*/onButtonPressed/*#-end-editable-code*/(./*#-editable-code*/<#T##geste##BTMicrobit.Event.Gesture#>/*#-end-editable-code*/, handler: {
     animateFist()
-    let randomNumber = random(in: /*#-editable-code*/<#T##lower bound##Int#>/*#-end-editable-code*/.../*#-editable-code*/<#T##upper bound##Int#>/*#-end-editable-code*/)
+    let randomNumber = random(in: /*#-editable-code*/<#T##borne inférieure##Int#>/*#-end-editable-code*/.../*#-editable-code*/<#T##borne supérieure##Int#>/*#-end-editable-code*/)
     if randomNumber == 1 {
         /*#-editable-code*/<#T##image##MicrobitImage#>/*#-end-editable-code*/.showImage()
     }

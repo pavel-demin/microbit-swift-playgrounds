@@ -4,30 +4,30 @@
 //
 //#-end-hidden-code
 /*:#localized(key: "Page2Narrative")
- As you have seen, the LEDs on the BBC micro:bit can be turned on to display text.
- 
- In the previous exercise we displayed letters on the screen. But what if we want to display shapes other than letters?
- 
- The micro:bit can also show *images*, where each of the LEDs is on or off to make a shape.
- 
- Let's try this out.
- 
- 1. Run the code below.
- 
- 2. Notice that the micro:bit displays a *heart* shape.
- 
- 3. For this exercise some images have been created for you. Click on the text `heart` in the `iconImage` function and you will see a list of 6 other images that can be displayed in the completion bar on the keyboard.
- 
- 4. Select an image from the list.
- 
- 5. Run your code again.
- 
- 6. Repeat steps 4 and 5 until you have tried each different shape.
- 
- Was it obvious to you what each shape was supposed to represent?
- 
- Once you get the hang of using the small space, you can make lots of different shapes and stories with just the micro:bit's display. For example, once you learn more about the micro:bit, it would be possible to write a program to display a heart every time you took a step, or tell an interactive story.
- */
+ Comme vous l'avez vu, les LEDs du BBC micro:bit peuvent être allumées pour afficher du texte.
+
+ Dans l'exercice précédent, nous avons affiché des lettres à l'écran. Mais que se passe-t-il si nous voulons afficher des formes autres que des lettres?
+
+ Le micro:bit peut également afficher des *images*, où chacune des LEDs est allumée ou éteinte pour créer une forme.
+
+ Essayons cela.
+
+ 1. Exécutez le code ci-dessous.
+
+ 2. Notez que le micro:bit affiche une forme *coeur*.
+
+ 3. Pour cet exercice, certaines images ont été créées pour vous. Cliquez sur le texte `heart` dans la fonction `iconImage` et vous verrez une liste de 6 autres images qui peuvent être affichées dans la barre de complétion du clavier.
+
+ 4. Sélectionnez une image dans la liste.
+
+ 5. Exécutez à nouveau votre code.
+
+ 6. Répétez les étapes 4 et 5 jusqu'à ce que vous ayez essayé chaque forme différente.
+
+ Était-il évident pour vous ce que chaque forme était censée représenter?
+
+ Une fois que vous maîtrisez l'utilisation du petit espace, vous pouvez créer de nombreuses formes et histoires différentes avec juste l'affichage du micro:bit. Par exemple, une fois que vous en saurez plus sur le micro:bit, il serait possible d'écrire un programme pour afficher un coeur à chaque fois que vous faites un pas, ou de raconter une histoire interactive.
+*/
 //#-hidden-code
 import PlaygroundSupport
 

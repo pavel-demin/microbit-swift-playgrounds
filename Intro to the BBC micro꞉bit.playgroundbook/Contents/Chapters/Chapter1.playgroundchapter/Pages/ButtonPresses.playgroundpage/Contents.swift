@@ -4,29 +4,29 @@
 //
 //#-end-hidden-code
 /*:#localized(key: "Page3Narrative")
- Either side of the 5 x 5 LED display, the BBC micro:bit has two buttons, one is labelled **A**, the other **B**.
- 
- We can use these buttons to carry out different functions.
- 
- Let’s use what we have learned in the previous two lessons to see how the buttons work.
- 
- For this exercise you are going to display a text message when button **A** is pressed and display a shape (or *icon*) when button **B** is pressed.
- 
- 1. In the code below look for the box next to the first appearance of `button` and either type `A` or choose **A** from the completion bar.
- 
- 2. In the line below this, click in the box that says `Hello World` and write your own short message.
- 
- 4. Now look for the next appearance of the word `button` and either type `B` or choose **B** from the completion bar.
- 
- 5. In the line below this, click in the box for the `heart` icon. Choose a different shape if you wish from the completion bar.
- 
- 6. Run the code. Intially nothing happens other than clearing the screen so that it is blank. The micro:bit is waiting for a *button event* to happen.
- 
- 7. Tap button **A** to see the text scroll and button **B** to display your chosen icon.
- 
- 8. Return to your code and change your program to display the text when button **B** is pressed and an icon when button **A** is pressed.
- 
- 9. Run your code to see what happens.
+ De chaque côté de l'écran LED 5 x 5, le BBC micro:bit a deux boutons, l'un est étiqueté **A**, l'autre **B**.
+
+ Nous pouvons utiliser ces boutons pour effectuer différentes fonctions.
+
+ Utilisons ce que nous avons appris dans les deux leçons précédentes pour voir comment les boutons fonctionnent.
+
+ Pour cet exercice, vous allez afficher un message texte lorsque vous appuyez sur le bouton **A** et afficher une forme (ou *icône*) lorsque vous appuyez sur le bouton **B**.
+
+ 1. Dans le code ci-dessous, recherchez la case à côté de la première apparition de `bouton` et tapez `A` ou choisissez **A** dans la barre de complétion.
+
+ 2. Dans la ligne en dessous, cliquez dans la case qui dit `Bonjour le Monde` et écrivez votre propre message court.
+
+ 4. Recherchez maintenant la prochaine apparition du mot `bouton` et tapez `B` ou choisissez **B** dans la barre de complétion.
+
+ 5. Dans la ligne en dessous, cliquez dans la case de l'icône `heart`. Choisissez une forme différente si vous le souhaitez dans la barre de complétion.
+
+ 6. Exécutez le code. Initialement, rien ne se passe, sauf effacer l'écran afin qu'il soit vide. Le micro:bit attend qu'un *événement de bouton* se produise.
+
+ 7. Appuyez sur le bouton **A** pour voir le défilement du texte et sur le bouton **B** pour afficher l'icône de votre choix.
+
+ 8. Revenez à votre code et changez votre programme pour afficher le texte lorsque le bouton **B** est enfoncé et une icône lorsque le bouton **A** est enfoncé.
+
+ 9. Exécutez votre code pour voir ce qui se passe.
 
  */
 //#-hidden-code
@@ -41,10 +41,10 @@ import PlaygroundSupport
 
 clearScreen()
 onButtonPressed(./*#-editable-code*/<#T##button##BTMicrobit.Button#>/*#-end-editable-code*/, handler: {
-    let textToDisplay = /*#-editable-code text to display*/"Hello World"/*#-end-editable-code*/
+    let textToDisplay = /*#-editable-code text to display*/"Bonjour le Monde"/*#-end-editable-code*/
     showString(textToDisplay)
 })
 onButtonPressed(./*#-editable-code*/<#T##button##BTMicrobit.Button#>/*#-end-editable-code*/, handler: {
-    let imageToDisplay = iconImage(./*#-editable-code*/heart/*#-end-editable-code*/)
+    let imageToDisplay = iconImage(./*#-editable-code icon name*/heart/*#-end-editable-code*/)
     imageToDisplay.showImage()
 })

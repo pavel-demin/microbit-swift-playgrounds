@@ -4,27 +4,27 @@
 //
 //#-end-hidden-code
 /*:#localized(key: "Page8Narrative")
- You will notice that running across the bottom of the BBC micro:bit there are numbers **0**, **1**, **2**, **3V** and **GND**. These are called *pins* and they provide another way for us to interact with the micro:bit.
- 
- They are designed to accommodate *crocodile clips* and *banana plugs*. If you have any handy then they make this exercise slightly easier, but they are not necessary.
- 
- Unlike the rest of the micro:bit these pins are not coated in paint, they are left as bare metal. This means that when they are touched by our fingers a small current will flow which can be detected by the micro:bit.
- 
- As you may have learned in science; to create a circuit a complete loop has to be created and this is where the **GND** comes in. To connect the pins you need to *pinch* **GND** with one hand and *pinch* one of the numbered pins with your other hand.
- 
- 1. Look at the code below. Before we can run it we need to specify which pins we wish to use.
- 
- 2. In the `onPinPressed` fucntion tap on the box labelled **pin** and choose one of the pins from the completion bar.
- 
- 3. Repeat this for the next `onPinPressed` handler, but ensure you use a different pin to that above.
- 
- 4. Run the code.
- 
- 5. Pinch the **GND** pin between your thumb and forefinger and with the other hand pinch one of the pins you chose above.
- 
- 6. What happens? You should see one of the shapes displayed on the LED display.
- 
- 7. Pinch the other pin you chose and observe what happens.
+ Vous remarquerez qu'en traversant le bas du BBC micro:bit, il y a des nombres **0**, **1**, **2**, **3V** et **GND**. Celles-ci sont appelées *broches* et elles nous fournissent un autre moyen d'interagir avec le micro:bit.
+
+ Elles sont conçues pour accueillir *des pinces crocodiles* et *des fiches bananes*. Si vous en avez à portée de main, ils facilitent légèrement cet exercice, mais ils ne sont pas nécessaires.
+
+ Contrairement au reste du micro:bit ces broches ne sont pas recouvertes de peinture, elles sont laissées en métal nu. Cela signifie que lorsqu'ils sont touchés par nos doigts, un petit courant circule qui peut être détecté par le micro:bit.
+
+ Comme vous l'avez peut-être appris en science; pour créer un circuit, une boucle complète doit être créée et c'est là que le **GND** entre en jeu. Pour connecter les broches, vous devez *pincer* **GND** d'une main et *pincer* l'une des broches  numérotées avec votre autre main.
+
+ 1. Regardez le code ci-dessous. Avant de pouvoir l'exécuter, nous devons spécifier les broches que nous souhaitons utiliser.
+
+ 2. Dans la fonction `onPinPressed`, tapez sur la case intitulée **pin** et choisissez l'une des broches dans la barre de complétion.
+
+ 3. Répétez cette opération pour le prochain gestionnaire `onPinPressed`, mais assurez-vous d'utiliser une broche différente de celle ci-dessus.
+
+ 4. Exécutez le code.
+
+ 5. Pincez la broche **GND** entre votre pouce et votre index et, avec l'autre main, pincez l'une des broches que vous avez choisies ci-dessus.
+
+ 6. Que se passe-t-il? Vous devriez voir l'une des formes affichées sur l'écran LED.
+
+ 7. Pincez l'autre broche que vous avez choisie et observez ce qui se passe.
 */
 //#-hidden-code
 import PlaygroundSupport

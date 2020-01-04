@@ -4,33 +4,33 @@
 //
 //#-end-hidden-code
 /*:#localized(key: "Page6Narrative")
- In the previous exercise you saw how the BBC micro:bit’s built-in accelerometer can be used to detect a shake gesture. This is not the only way that the micro:bit’s accelerometer can be used.
- 
- The accelerometer measures the orientation of the micro:bit in three dimensions: **x**, **y** and **z**. We can use this to determine whether the micro:bit is *tilted* or *flat*.
- 
- One practical application of this is a *spirit level.* When the micro:bit is flat, the centre LED will be turned on, but as the device is tilted it will show an LED further towards the edge; like the bubble in a spirit level.
- 
- 1. Look at the display opposite. As you tilt your micro:bit, (or iPad if you do not have a connected micro:bit), you will see the acceleration values change. These represent how far the micro:bit is tilted in each direction.
- 
- 2. Run the code below.
- 
- 3. Tilt your micro:bit from one side to another and watch how the values change. For each axis the values change between -1000 and +1000. This measurement is in *milli-gravities.* A value of 1000 (1 gravity) represents the full force of gravity acting along that axis of the micro:bit. If you are tilting the iPad you might find it useful to turn on the orientation lock first.
- 
- 4. Try to get the lit LED to sit in the very centre of the 5 x 5 display.
- 
- 5. Look at the code below.
- 
- 6. The code is reacting to the orientation of the device along the x axis. We read the value of `x` from the `accelerationValues` and then determine which of the horizontal LEDs in the centre of the display should be lit. The centre line is where y is 2.
- 
- 7. All the code below is fully editable.
- 
- 8. Change the code so that the micro:bit is more sensitive to being tilted.
- 
- 9. You need to re-run the code everytime you edit it.
- 
- 10. Try to change the code so that it reads the `y` from `accelerationValues` and then change the LED along the y axis too. You can select blocks of code to copy and paste.
- 
- Now that you've mastered the accelerometer you can use it for other things. For example, it could be used to create a game in which the micro:bit is used for a driving simulation.
+ Dans l'exercice précédent, vous avez vu comment l'accéléromètre intégré du BBC micro:bit peut être utilisé pour détecter un mouvement de secousse. Ce n'est pas la seule façon d'utiliser l'accéléromètre du micro:bit.
+
+ L'accéléromètre mesure l'orientation du micro:bit en trois dimensions: **x**, **y** et **z**. Nous pouvons l'utiliser pour déterminer si le micro:bit est *incliné* ou *plat*.
+
+ Une application pratique de ceci est un *niveau à bulle*. Lorsque le micro:bit est plat, la LED centrale sera allumée, mais lorsque l'appareil est incliné, il affichera une LED plus loin vers le bord; comme la bulle dans un niveau à bulle.
+
+ 1. Regardez l'écran ci-contre. Lorsque vous inclinez votre micro:bit (ou votre iPad si vous n'avez pas de micro:bit connecté), vous verrez les valeurs d'accélération changer. Celles-ci représentent dans quelle mesure le micro:bit est incliné dans chaque direction.
+
+ 2. Exécutez le code ci-dessous.
+
+ 3. Inclinez votre micro:bit d'un côté à l'autre et regardez comment les valeurs changent. Pour chaque axe, les valeurs varient entre -1000 et +1000. Cette mesure est en *milli-gravité*. Une valeur de 1000 (1 gravité) représente la pleine force de gravité agissant le long de cet axe du micro:bit. Si vous inclinez l'iPad, il peut être utile d'activer d'abord le verrouillage d'orientation.
+
+ 4. Essayez de placer la LED allumée au centre de l'écran 5 x 5.
+
+ 5. Regardez le code ci-dessous.
+
+ 6. Le code réagit à l'orientation de l'appareil le long de l'axe x. Nous lisons la valeur de `x` dans les `accelerationValues`, puis déterminons laquelle des LEDs horizontales au centre de l'écran doit être allumée. La ligne médiane est l'endroit où y est 2.
+
+ 7. Tout le code ci-dessous est entièrement modifiable.
+
+ 8. Modifiez le code pour que le micro:bit soit plus sensible à l'inclinaison.
+
+ 9. Vous devez réexécuter le code chaque fois que vous le modifiez.
+
+ 10. Essayez de changer le code pour qu'il lise le `y` de `accelerationValues`, puis changez également la LED le long de l'axe y. Vous pouvez sélectionner des blocs de code à copier et coller.
+
+ Maintenant que vous maîtrisez l'accéléromètre, vous pouvez l'utiliser pour d'autres choses. Par exemple, il pourrait être utilisé pour créer un jeu dans lequel le micro:bit est utilisé pour une simulation de conduite.
  */
 //#-hidden-code
 import PlaygroundSupport
